@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white overflow-x-hidden">
+    <div class="max-w-screen-2xl mx-auto min-h-screen px-6 pt-6">
+
+      <!-- Navigation -->
+      <header class="w-full mb-8">
+        <nav class="flex items-center justify-between fixed top-0 left-0 right-0 mx-8">
+          <img src="images/logo1.png" class="md:w-[220px] w-[120px] cursor-pointer" alt="logo">
+  
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+          <label for="menu-toggle" class="menu-icon md:hidden flex-col cursor-pointer">
+            <span class="block bg-[#3498DB] h-1 w-6 my-1"></span>
+            <span class="block bg-[#3498DB] h-1 w-6 my-1"></span>
+            <span class="block bg-[#3498DB] h-1 w-6 my-1"></span>
+          </label>
+  
+          <ul class="hidden md:flex md:space-x-6 peer-checked:flex flex-col md:flex-row bg-white md:bg-transparent w-full md:w-auto">
+            <li><a class="change text-[#3498DB] hover:text-[#11477B] font-semibold" href="#">Home</a></li>
+            <li><a class="change text-[#3498DB] hover:text-[#11477B] font-semibold" href="#">About</a></li>
+            <li><a class="change text-[#3498DB] hover:text-[#11477B] font-semibold" href="#">Services</a></li>
+            <li>
+              <a href="#" class="signup bg-[#3498DB] text-white px-4 py-2 rounded-md hover:bg-white hover:text-[#11477B] border font-semibold md:w-full">
+                Signup
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        <!-- main content -->
+         <div class="bg-[url(images/Group.png)] mt-4  lg:flex-col">
+            <div class="mx-auto mt-8">
+                <h1 class="text-center md:text-4xl text-base text-[#3498DB] inter-bold font-bold px-4 py-2">___Profile___</h1>
+            </div>
+            <div class="flex flex-wrap justify-evenly mt-6 gap-6 ml-3">
+                <div class="bg-[#EBF5FB] rounded-3xl w-[336px] md:w-[336px] p-5">
+                    <form action="#" class="flex flex-col">
+                        <label for="name" class="text-[#11477B] block pb-2 font-medium">Name</label>
+                        <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="text" id="name" name="name" required>
+
+                        <label for="email" class="text-[#11477B] block pb-2 font-medium">E-mail</label>
+                        <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="email" id="email" name="email" required>
+
+                        <label for="name" class="text-[#11477B] block pb-2 font-medium">Phone</label>
+                        <input class="bg-white rounded-xl border-[#11477B] w-full h-8 mb-5 text-[#11477B]" type="tel" id="name" name="name" required>
+
+                        <label for="gender" class="text-[#11477B] block pb-2 font-medium">Gender</label>
+                        <select name="gender" id="gender" class="bg-white rounded-xl border-[#11477B] w-1/2 h-8 mb-16 text-[#11477B]">
+                            <option value="male" class="text-[#11477B]">Male</option>
+                            <option value="male" class="text-[#11477B]">Female</option>
+                        </select>
+
+                        <input type="button" value="Edit" class="bg-[#11477B] text-[#ffff] px-4 py-2 cursor-pointer rounded-[16px] font-bold w-1/2">
+                    </form>
+                </div>
+                <div class="bg-[#EBF5FB] flex flex-col rounded-3xl px-3 py-4 w-[336px] md:w-[336px] h-fit">
+                    <div class="pl-4 flex flex-col justify-between">
+                        <div class="pb-6 mb-20">
+                            <label  for="accepted" class="text-[#11477B] block pb-2 font-medium">Interview status</label>
+                            <button class="bg-[#56EC5933] text-[#12DA16] px-2 py-1  rounded-full font-bold w-[95px]" id="accepted" value="">
+                                Accepted</button>
+                        </div>
+
+                        <div class="pb-6">
+                            <label for="rejected" class="text-[#11477B] block pb-2 font-medium">Interview status</label>
+                            <button  class="bg-[#EC565633] text-[#DA1512] px-2 py-1 rounded-full font-bold w-[95px]" id="rejected" value="">
+                                Rejected</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap sm:flex-wrap justify-between py-8 sm:flex-row flex-col gap-6">
+                <a href="#" class="text-[#11477B] mx-28 font-bold text-nowrap md:mx-24 md:font-[14px]"> < Back to Home</a>
+                <input type="button" value="Log out" class="bg-[#11477B] text-[#ffff] px-4 py-2 cursor-pointer rounded-[16px] text-[#11477B] font-bold mx-72">
+            </div>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+-->
